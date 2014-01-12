@@ -1,4 +1,5 @@
-<?
+<?php
+
 namespace Oh\GoogleMapFormTypeBundle\Twig;
 
 class GoogleMapsExtension extends \Twig_Extension
@@ -6,7 +7,7 @@ class GoogleMapsExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            new \Twig_Filter_Method('google_maps_scripts', array($this, 'renderGoogleMapsScripts')),
+            'google_maps_scripts'  => new \Twig_Filter_Method($this, 'renderGoogleMapsScripts'),
         );
     }
 
