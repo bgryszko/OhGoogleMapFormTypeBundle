@@ -13,5 +13,10 @@
         <service id="form.type.oh_google_maps" class="%form.type.oh_google_maps.class%">
             <tag name="form.type" alias="oh_google_maps" />
         </service>
+
+		<service id="oh.twig.google_maps_extension" class="Oh\GoogleMapFormTypeBundle\Twig\GoogleMapsExtension">
+		    <tag name="twig.extension" />
+		</service>
     </services>
 </container>
+
