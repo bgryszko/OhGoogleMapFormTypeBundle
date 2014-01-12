@@ -1,3 +1,4 @@
+<?
 namespace Oh\GoogleMapFormTypeBundle\Twig;
 
 class GoogleMapsExtension extends \Twig_Extension
