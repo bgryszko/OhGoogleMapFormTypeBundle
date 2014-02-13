@@ -67,7 +67,7 @@
 					$this.map.setZoom(16);
 					$this.insertMarker(results[0].geometry.location);
 				} else {
-					$this.settings.search_error_el.text(status);
+					alert("Przepraszamy, nie odnaleźliśmy lokalizacji (" + status + ")");
 				}
 			});
 		},
@@ -85,11 +85,11 @@
 						$this.map.setZoom(16);
 					}, 
 					function(error) {
-						$this.settings.search_error_el.text(error);
+						alert("Przepraszamy, nie odnaleźliśmy lokalizacji (" + error + ")");
 					}
 				);      
 			} else {
-				$this.settings.search_error_el.text('Your broswer does not support geolocation');
+				alert('Państwa przeglądarka nie obsługuje geolokalizacji.');
 			}
 			
 		},
